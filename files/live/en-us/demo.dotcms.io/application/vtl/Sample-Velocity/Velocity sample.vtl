@@ -1,3 +1,4 @@
+<h1>$!{dotPageContent.title}</h1>
 #foreach($activity in $dotcontent.pull("+contentType:Activity +(conhost:$!{host.identifier} conhost:SYSTEM_HOST) +variant:default",10,"Activity.publishDate desc"))
    <h2>$!{velocityCount}. $!{activity.title} #editContentlet($!{activity.inode})</h2>
    #if($activity.publishDate)
