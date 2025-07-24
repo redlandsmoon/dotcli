@@ -1,0 +1,104 @@
+{
+  "tickets": [
+    {
+      "id": 30573,
+      "subject": "Syncing environments issue",
+      "status": 2,
+      "priority": 2,
+      "requester_id": 10001,
+      "group_id": 101,
+      "created_at": "2024-04-10T10:20:00Z",
+      "updated_at": "2024-04-10T12:00:00Z"
+    },
+    {
+      "id": 30550,
+      "subject": "Data problem",
+      "status": 2,
+      "priority": 3,
+      "requester_id": 10002,
+      "group_id": 101,
+      "created_at": "2024-04-09T15:00:00Z",
+      "updated_at": "2024-04-11T08:45:00Z"
+    },
+    {
+      "id": 30530,
+      "subject": "HTTP 502 Proxy Error accessing file endpoint",
+      "status": 2,
+      "priority": 1,
+      "requester_id": 10003,
+      "group_id": 101,
+      "created_at": "2024-04-08T13:15:00Z",
+      "updated_at": "2024-04-11T07:30:00Z"
+    },
+    {
+      "id": 30508,
+      "subject": "Content no longer showing up",
+      "status": 3,
+      "priority": 2,
+      "requester_id": 10004,
+      "group_id": 101,
+      "created_at": "2024-04-07T10:00:00Z",
+      "updated_at": "2024-04-10T11:30:00Z"
+    },
+    {
+      "id": 30497,
+      "subject": "Content is unpublished but it's still working",
+      "status": 3,
+      "priority": 2,
+      "requester_id": 10005,
+      "group_id": 101,
+      "created_at": "2024-04-06T09:00:00Z",
+      "updated_at": "2024-04-10T09:00:00Z"
+    },
+    {
+      "id": 30483,
+      "subject": "Not able to remove content",
+      "status": 3,
+      "priority": 3,
+      "requester_id": 10006,
+      "group_id": 101,
+      "created_at": "2024-04-06T12:00:00Z",
+      "updated_at": "2024-04-10T10:00:00Z"
+    },
+    {
+      "id": 30343,
+      "subject": "News Articles Overlapping",
+      "status": 3,
+      "priority": 4,
+      "requester_id": 10007,
+      "group_id": 101,
+      "created_at": "2024-04-05T10:00:00Z",
+      "updated_at": "2024-04-10T14:00:00Z"
+    },
+    {
+      "id": 30342,
+      "subject": "Content history",
+      "status": 4,
+      "priority": 2,
+      "requester_id": 10008,
+      "group_id": 101,
+      "created_at": "2024-04-05T09:00:00Z",
+      "updated_at": "2024-04-10T09:30:00Z"
+    },
+    {
+      "id": 30316,
+      "subject": "Timeline loading indicator with UVE",
+      "status": 3,
+      "priority": 2,
+      "requester_id": 10009,
+      "group_id": 101,
+      "created_at": "2024-04-04T11:00:00Z",
+      "updated_at": "2024-04-10T11:00:00Z"
+    },
+    {
+      "id": 30320,
+      "subject": "Pre PayShop",
+      "status": 3,
+      "priority": 2,
+      "requester_id": 10010,
+      "group_id": 101,
+      "created_at": "2024-04-04T12:00:00Z",
+      "updated_at": "2024-04-10T15:00:00Z"
+    }
+  ]
+}

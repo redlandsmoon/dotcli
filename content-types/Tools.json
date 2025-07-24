@@ -1,0 +1,22 @@
+{
+  "clazz" : "SimpleContentType",
+  "id" : "c731781187f8d41cdc7d6cdc1ffdd5d2",
+  "name" : "Tools",
+  "variable" : "Tools",
+  "modDate" : "2024-05-28T14:54:13.000+00:00",
+  "iDate" : "2024-05-28T14:54:13.000+00:00",
+  "host" : "48190c8c-42c4-46af-8d1a-0cd5db894797",
+  "folder" : "SYSTEM_FOLDER",
+  "siteName" : "demo.dotcms.io",
+  "folderPath" : "/",
+  "icon" : "event_note",
+  "baseType" : "CONTENT",
+  "metadata" : {
+    "CONTENT_EDITOR2_ENABLED" : false
+  },
+  "workflows" : [ {
+    "id" : "d61a59e1-a49c-46f2-a929-db2b4bfa88b2",
+    "variableName" : "SystemWorkflow"
+  } ],
+  "dotCMSObjectType" : "ContentType"
+}

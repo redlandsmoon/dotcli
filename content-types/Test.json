@@ -1,0 +1,71 @@
+{
+  "clazz" : "SimpleContentType",
+  "id" : "61226fd915b7f025da020fc1f5856ab7",
+  "name" : "Test",
+  "variable" : "Test",
+  "modDate" : "2024-05-20T19:27:13.000+00:00",
+  "iDate" : "2024-05-20T19:25:02.000+00:00",
+  "host" : "48190c8c-42c4-46af-8d1a-0cd5db894797",
+  "folder" : "SYSTEM_FOLDER",
+  "siteName" : "demo.dotcms.io",
+  "folderPath" : "/",
+  "icon" : "event_note",
+  "baseType" : "CONTENT",
+  "fields" : [ {
+    "clazz" : "RowField",
+    "id" : "1a4d2af59164c4e8f5832e9276620914",
+    "modDate" : "2024-05-20T19:25:14.000+00:00",
+    "name" : "fields-0",
+    "fieldType" : "Row",
+    "fieldTypeLabel" : "Row",
+    "iDate" : "2024-05-20T19:25:03.000+00:00",
+    "variable" : "fields0",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "c2d56be8d06ae7d9998708c8f9542338",
+    "modDate" : "2024-05-20T19:25:14.000+00:00",
+    "name" : "fields-1",
+    "sortOrder" : 1,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2024-05-20T19:25:03.000+00:00",
+    "variable" : "fields1",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "TextField",
+    "searchable" : true,
+    "indexed" : true,
+    "listed" : true,
+    "id" : "725e4f982b7b75bbf0b8c87818dd4df1",
+    "modDate" : "2024-05-20T19:25:14.000+00:00",
+    "name" : "Title",
+    "variable" : "title",
+    "required" : true,
+    "sortOrder" : 2,
+    "fieldType" : "Text",
+    "fieldTypeLabel" : "Text",
+    "iDate" : "2024-05-20T19:25:14.000+00:00",
+    "dataType" : "TEXT"
+  }, {
+    "clazz" : "CustomField",
+    "id" : "3a285bfdd8e71172b5df66e5b043b21f",
+    "modDate" : "2024-05-20T19:27:13.000+00:00",
+    "name" : "Category Name",
+    "variable" : "categoryName",
+    "sortOrder" : 3,
+    "values" : "##Displays a select list of Categories from DSS API pull\r\n#set($content = $dotcontent.find(\"$!{identifier}\"))\r\n#set($categoryRef = $content.categoryName)\r\n##provides select list to choose a category from the api return\r\n<select id=\"categoryName-select\" onchange=\"onCategoryNameChange()\" multiple=\"multiple\">\r\n  ##pulls a raw parent category list from dss api\r\n  #set($catRaw = $json.fetch(\"https://dssdias-sit.intershop.cloud/INTERSHOP/rest/WFS/inSPIRED-inTRONICS_Business-Site/-;loc=en_US;cur=USD/categories\"))\r\n    #foreach($category in $catRaw.elements)\r\n      #if($velocityCount==1)\r\n        <option value=\"\"></option>\r\n      #end\r\n      <option value=\"$!{category.categoryRef}\" #if($categoryRef == $category.categoryRef)selected#end>$!{category.name}</option>\r\n    #end\r\n</select>\r\n<script>\r\n    function onCategoryNameChange() {\r\n      setValue();\r\n      setChildCategories();\r\n    }\r\n\r\n    function setValue(){\r\n      //Gets the value of the select field\r\n      const fieldValue = document.getElementById(\"categoryName-select\").value;\r\n      \r\n      // Sets the custom field value in this case the field was called Parent Category\r\n      document.getElementById(\"categoryName\").value = fieldValue;\r\n      \r\n      // Create the event\r\n      const event = new Event('categories-changes', {\r\n        bubbles: true,\r\n        cancelable: true,\r\n      });\r\n      \r\n      // Dispatch the event\r\n      document.dispatchEvent(event);\r\n    }\r\n\r\n    // Initialize the value when the page loads\r\n    window.addEventListener('load', setValue);\r\n</script>\r\n",
+    "fieldType" : "Custom-Field",
+    "fieldTypeLabel" : "Custom Field",
+    "iDate" : "2024-05-20T19:27:13.000+00:00",
+    "dataType" : "LONG_TEXT"
+  } ],
+  "metadata" : {
+    "CONTENT_EDITOR2_ENABLED" : false
+  },
+  "workflows" : [ {
+    "id" : "d61a59e1-a49c-46f2-a929-db2b4bfa88b2",
+    "variableName" : "SystemWorkflow"
+  } ],
+  "dotCMSObjectType" : "ContentType"
+}

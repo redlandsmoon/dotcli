@@ -1,0 +1,14 @@
+#foreach($activity in $dotcontent.pull("+contentType:Activity +(conhost:$!{host.identifier} conhost:SYSTEM_HOST) +variant:default",10,"Activity.publishDate desc"))
+   <h2>$!{velocityCount}. $!{activity.title} #editContentlet($!{activity.inode})</h2>
+   #if($activity.publishDate)
+       <p><strong>Published:</strong> $date.format("MMMM dd, yyyy", $activity.publishDate)</p>
+   #end
+   <p>$!{activity.description}</p>
+    #if($activity.tourguides && !$activity.tourguides.isEmpty())
+      <p><strong>Tour Guide(s):</strong>
+      #foreach($guide in $activity.tourguides)
+          <b>$!{guide.name}</b>
+      #end
+      </p>
+  #end
+#end

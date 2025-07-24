@@ -1,0 +1,91 @@
+{
+  "clazz" : "SimpleContentType",
+  "id" : "049449a5b257edeb01a9b310cc7c5f9f",
+  "name" : "Request Ticket",
+  "variable" : "RequestTicket",
+  "modDate" : "2024-05-01T21:52:45.000+00:00",
+  "iDate" : "2024-05-01T21:26:39.000+00:00",
+  "host" : "48190c8c-42c4-46af-8d1a-0cd5db894797",
+  "folder" : "SYSTEM_FOLDER",
+  "siteName" : "demo.dotcms.io",
+  "folderPath" : "/",
+  "icon" : "event_note",
+  "baseType" : "CONTENT",
+  "fields" : [ {
+    "clazz" : "RowField",
+    "id" : "42ae3aba943ed211d6407e33e8dc77dd",
+    "modDate" : "2024-05-01T21:27:09.000+00:00",
+    "name" : "fields-0",
+    "fieldType" : "Row",
+    "fieldTypeLabel" : "Row",
+    "iDate" : "2024-05-01T21:26:39.000+00:00",
+    "variable" : "fields0",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "3fe8f3c0bf906853c9a6b4666deac513",
+    "modDate" : "2024-05-01T21:27:09.000+00:00",
+    "name" : "fields-1",
+    "sortOrder" : 1,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2024-05-01T21:26:39.000+00:00",
+    "variable" : "fields1",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "TextField",
+    "searchable" : true,
+    "indexed" : true,
+    "listed" : true,
+    "id" : "78e0eccf23dc34af5e7b43d716a26a6b",
+    "modDate" : "2024-05-01T21:52:45.000+00:00",
+    "name" : "Request",
+    "variable" : "request",
+    "sortOrder" : 2,
+    "fieldType" : "Text",
+    "fieldTypeLabel" : "Text",
+    "iDate" : "2024-05-01T21:27:09.000+00:00",
+    "dataType" : "TEXT"
+  }, {
+    "clazz" : "CategoryField",
+    "searchable" : true,
+    "indexed" : true,
+    "id" : "31c70502bfff5ba7d23c3bae923e3d11",
+    "modDate" : "2024-05-01T21:30:30.000+00:00",
+    "name" : "Reason",
+    "variable" : "reason",
+    "sortOrder" : 3,
+    "values" : "1ab0978c4af3830d1d35f86ce246caa6",
+    "fieldType" : "Category",
+    "fieldTypeLabel" : "Category",
+    "iDate" : "2024-05-01T21:30:30.000+00:00",
+    "dataType" : "SYSTEM",
+    "categories" : {
+      "categoryName" : "Reason",
+      "description" : null,
+      "inode" : "1ab0978c4af3830d1d35f86ce246caa6",
+      "key" : "reason",
+      "keywords" : "",
+      "sortOrder" : 0
+    }
+  }, {
+    "clazz" : "WysiwygField",
+    "id" : "8802a01245f04e4373489c71910f710e",
+    "modDate" : "2024-05-01T21:30:30.000+00:00",
+    "name" : "Response",
+    "variable" : "response",
+    "sortOrder" : 4,
+    "fieldType" : "WYSIWYG",
+    "fieldTypeLabel" : "WYSIWYG",
+    "iDate" : "2024-05-01T21:27:28.000+00:00",
+    "dataType" : "LONG_TEXT"
+  } ],
+  "metadata" : {
+    "CONTENT_EDITOR2_ENABLED" : false
+  },
+  "workflows" : [ {
+    "id" : "1db41170-039c-46ba-a301-9c729c7b8998",
+    "variableName" : "RequestTicketWorkflow"
+  } ],
+  "dotCMSObjectType" : "ContentType"
+}

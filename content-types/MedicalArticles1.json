@@ -1,0 +1,66 @@
+{
+  "clazz" : "SimpleContentType",
+  "id" : "471984f6778cabec7ce80ef08be42385",
+  "name" : "Medical Articles",
+  "variable" : "MedicalArticles1",
+  "modDate" : "2024-05-29T17:34:07.000+00:00",
+  "iDate" : "2024-05-29T17:33:51.000+00:00",
+  "host" : "48190c8c-42c4-46af-8d1a-0cd5db894797",
+  "folder" : "SYSTEM_FOLDER",
+  "siteName" : "demo.dotcms.io",
+  "folderPath" : "/",
+  "icon" : "event_note",
+  "baseType" : "CONTENT",
+  "fields" : [ {
+    "clazz" : "RowField",
+    "id" : "bdeed070e7087d32874ebfea97472bf2",
+    "modDate" : "2024-05-29T17:33:59.000+00:00",
+    "name" : "fields-0",
+    "fieldType" : "Row",
+    "fieldTypeLabel" : "Row",
+    "iDate" : "2024-05-29T17:33:51.000+00:00",
+    "variable" : "fields0",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "c6af1c546016c86f88da6ca98400eb4a",
+    "modDate" : "2024-05-29T17:33:59.000+00:00",
+    "name" : "fields-1",
+    "sortOrder" : 1,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2024-05-29T17:33:51.000+00:00",
+    "variable" : "fields1",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "TextField",
+    "id" : "a03b7f54c6fd1f12af52c22beb07762a",
+    "modDate" : "2024-05-29T17:33:59.000+00:00",
+    "name" : "Title",
+    "variable" : "title",
+    "sortOrder" : 2,
+    "fieldType" : "Text",
+    "fieldTypeLabel" : "Text",
+    "iDate" : "2024-05-29T17:33:59.000+00:00",
+    "dataType" : "TEXT"
+  }, {
+    "clazz" : "WysiwygField",
+    "id" : "e82ee6aa588f78bf737f03206cd4921c",
+    "modDate" : "2024-05-29T17:34:07.000+00:00",
+    "name" : "Body",
+    "variable" : "body",
+    "sortOrder" : 3,
+    "fieldType" : "WYSIWYG",
+    "fieldTypeLabel" : "WYSIWYG",
+    "iDate" : "2024-05-29T17:34:07.000+00:00",
+    "dataType" : "LONG_TEXT"
+  } ],
+  "metadata" : {
+    "CONTENT_EDITOR2_ENABLED" : false
+  },
+  "workflows" : [ {
+    "id" : "d61a59e1-a49c-46f2-a929-db2b4bfa88b2",
+    "variableName" : "SystemWorkflow"
+  } ],
+  "dotCMSObjectType" : "ContentType"
+}

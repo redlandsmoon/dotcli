@@ -1,0 +1,166 @@
+{
+  "clazz" : "SimpleContentType",
+  "id" : "ac396608c727b8ed1e3ae39e16297089",
+  "name" : "Articles",
+  "variable" : "Articles",
+  "modDate" : "2024-07-24T18:32:30.000+00:00",
+  "iDate" : "2024-06-26T14:36:44.000+00:00",
+  "host" : "48190c8c-42c4-46af-8d1a-0cd5db894797",
+  "folder" : "SYSTEM_FOLDER",
+  "siteName" : "demo.dotcms.io",
+  "folderPath" : "/",
+  "icon" : "event_note",
+  "baseType" : "CONTENT",
+  "fields" : [ {
+    "clazz" : "RowField",
+    "id" : "b9d73de40118ab20b1b1e3c3be0e46a6",
+    "modDate" : "2024-06-26T14:36:51.000+00:00",
+    "name" : "fields-0",
+    "fieldType" : "Row",
+    "fieldTypeLabel" : "Row",
+    "iDate" : "2024-06-26T14:36:51.000+00:00",
+    "variable" : "fields0",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "0d1beb83edf1fad77ea8213bfb3a30b4",
+    "modDate" : "2024-06-26T14:36:51.000+00:00",
+    "name" : "fields-1",
+    "sortOrder" : 1,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2024-06-26T14:36:51.000+00:00",
+    "variable" : "fields1",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "TextField",
+    "searchable" : true,
+    "indexed" : true,
+    "listed" : true,
+    "id" : "647301e3a3e08adc8f64134dbb8cb311",
+    "modDate" : "2024-06-26T14:37:17.000+00:00",
+    "name" : "Title",
+    "variable" : "title",
+    "required" : true,
+    "sortOrder" : 2,
+    "fieldType" : "Text",
+    "fieldTypeLabel" : "Text",
+    "iDate" : "2024-06-26T14:37:17.000+00:00",
+    "dataType" : "TEXT"
+  }, {
+    "clazz" : "HostFolderField",
+    "indexed" : true,
+    "id" : "3ac5f21930ce934e1c88366788cfd66e",
+    "modDate" : "2024-07-24T18:31:33.000+00:00",
+    "name" : "Site",
+    "variable" : "site",
+    "sortOrder" : 3,
+    "fieldType" : "Host-Folder",
+    "fieldTypeLabel" : "Site or Folder",
+    "iDate" : "2024-06-26T14:40:43.000+00:00",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "CategoryField",
+    "searchable" : true,
+    "indexed" : true,
+    "id" : "b4162c7a99936f86cb5c908fcf13ebcc",
+    "modDate" : "2024-07-24T18:31:33.000+00:00",
+    "name" : "Travel Category",
+    "variable" : "travelCategory",
+    "sortOrder" : 4,
+    "values" : "9fa0ab8b-f4d6-4784-88ad-3ed7616bd220",
+    "fieldType" : "Category",
+    "fieldTypeLabel" : "Category",
+    "iDate" : "2024-06-26T14:37:47.000+00:00",
+    "dataType" : "SYSTEM",
+    "categories" : {
+      "categoryName" : "Categories",
+      "description" : null,
+      "inode" : "9fa0ab8b-f4d6-4784-88ad-3ed7616bd220",
+      "key" : "categories",
+      "keywords" : "",
+      "sortOrder" : 0
+    }
+  }, {
+    "clazz" : "RelationshipField",
+    "searchable" : true,
+    "indexed" : true,
+    "id" : "32e8d121e15ab29bf3f6c6e15ba61d17",
+    "modDate" : "2024-07-24T18:32:30.000+00:00",
+    "name" : "Author",
+    "variable" : "author",
+    "sortOrder" : 5,
+    "fieldType" : "Relationship",
+    "fieldTypeLabel" : "Relationships Field",
+    "iDate" : "2024-07-24T18:32:30.000+00:00",
+    "dataType" : "SYSTEM",
+    "relationships" : {
+      "velocityVar" : "BlogAuthor",
+      "cardinality" : "MANY_TO_MANY",
+      "isParentField" : true
+    }
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "3a84d977f4cecb542d1e77cabca9865e",
+    "modDate" : "2024-07-24T18:32:30.000+00:00",
+    "name" : "fields-2",
+    "sortOrder" : 6,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2024-06-26T14:36:51.000+00:00",
+    "variable" : "fields2",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "BinaryField",
+    "id" : "6ee547d92ae42f79d047dc59e21393db",
+    "modDate" : "2024-07-24T18:32:30.000+00:00",
+    "name" : "Image",
+    "variable" : "image",
+    "sortOrder" : 7,
+    "fieldType" : "Binary",
+    "fieldTypeLabel" : "Binary",
+    "iDate" : "2024-06-26T14:37:00.000+00:00",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "RowField",
+    "id" : "b4da534b15a49fe1bbac5bb5f9c537bf",
+    "modDate" : "2024-07-24T18:32:30.000+00:00",
+    "name" : "fields-3",
+    "sortOrder" : 8,
+    "fieldType" : "Row",
+    "fieldTypeLabel" : "Row",
+    "iDate" : "2024-06-26T14:36:44.000+00:00",
+    "variable" : "fields3",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "278bfc9093f91af6de70871b2b3bc999",
+    "modDate" : "2024-07-24T18:32:30.000+00:00",
+    "name" : "fields-4",
+    "sortOrder" : 9,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2024-06-26T14:36:44.000+00:00",
+    "variable" : "fields4",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "WysiwygField",
+    "id" : "a02071cc5ac35efe7f0995f61632a67b",
+    "modDate" : "2024-07-24T18:32:30.000+00:00",
+    "name" : "Body",
+    "variable" : "body",
+    "sortOrder" : 10,
+    "fieldType" : "WYSIWYG",
+    "fieldTypeLabel" : "WYSIWYG",
+    "iDate" : "2024-06-26T14:37:27.000+00:00",
+    "dataType" : "LONG_TEXT"
+  } ],
+  "metadata" : {
+    "CONTENT_EDITOR2_ENABLED" : false
+  },
+  "workflows" : [ {
+    "id" : "d61a59e1-a49c-46f2-a929-db2b4bfa88b2",
+    "variableName" : "SystemWorkflow"
+  } ],
+  "dotCMSObjectType" : "ContentType"
+}

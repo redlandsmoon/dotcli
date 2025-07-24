@@ -1,0 +1,70 @@
+{
+  "clazz" : "SimpleContentType",
+  "id" : "7b8d71bf0260054b9f1553a8725af84d",
+  "name" : "Text",
+  "variable" : "Text",
+  "modDate" : "2024-05-28T12:29:36.000+00:00",
+  "iDate" : "2024-05-28T12:29:13.000+00:00",
+  "host" : "48190c8c-42c4-46af-8d1a-0cd5db894797",
+  "folder" : "SYSTEM_FOLDER",
+  "siteName" : "demo.dotcms.io",
+  "folderPath" : "/",
+  "icon" : "event_note",
+  "baseType" : "CONTENT",
+  "fields" : [ {
+    "clazz" : "RowField",
+    "id" : "06bf2791bf9f53e7ff10923fea6912c2",
+    "modDate" : "2024-05-28T12:29:26.000+00:00",
+    "name" : "fields-0",
+    "fieldType" : "Row",
+    "fieldTypeLabel" : "Row",
+    "iDate" : "2024-05-28T12:29:14.000+00:00",
+    "variable" : "fields0",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "317af74b0a24954340f82d02c94cc074",
+    "modDate" : "2024-05-28T12:29:26.000+00:00",
+    "name" : "fields-1",
+    "sortOrder" : 1,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2024-05-28T12:29:14.000+00:00",
+    "variable" : "fields1",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "TextField",
+    "searchable" : true,
+    "indexed" : true,
+    "listed" : true,
+    "id" : "4b812597dd05ad8267ae63ad223e9a1f",
+    "modDate" : "2024-05-28T12:29:26.000+00:00",
+    "name" : "Title",
+    "variable" : "title",
+    "required" : true,
+    "sortOrder" : 2,
+    "fieldType" : "Text",
+    "fieldTypeLabel" : "Text",
+    "iDate" : "2024-05-28T12:29:26.000+00:00",
+    "dataType" : "TEXT"
+  }, {
+    "clazz" : "WysiwygField",
+    "id" : "c59f5d5aaa6f35b6b2c5b70fa9bb4def",
+    "modDate" : "2024-05-28T12:29:36.000+00:00",
+    "name" : "Body",
+    "variable" : "body",
+    "sortOrder" : 3,
+    "fieldType" : "WYSIWYG",
+    "fieldTypeLabel" : "WYSIWYG",
+    "iDate" : "2024-05-28T12:29:36.000+00:00",
+    "dataType" : "LONG_TEXT"
+  } ],
+  "metadata" : {
+    "CONTENT_EDITOR2_ENABLED" : false
+  },
+  "workflows" : [ {
+    "id" : "d61a59e1-a49c-46f2-a929-db2b4bfa88b2",
+    "variableName" : "SystemWorkflow"
+  } ],
+  "dotCMSObjectType" : "ContentType"
+}

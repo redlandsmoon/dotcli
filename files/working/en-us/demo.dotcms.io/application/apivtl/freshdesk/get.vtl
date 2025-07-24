@@ -1,0 +1,32 @@
+#set($headers = {
+  "Authorization": "Basic cmFibEtoOTVQMktSYjBTdFdNdWo6WA==",
+  "Content-Type": "application/json"
+})
+
+#set($ticketList = [])
+#foreach($i in [1..5])  ## Max 5 pages
+  #set($url = "https://dotcms.freshdesk.com/api/v2/tickets?per_page=100&page=$i")
+  #set($response = $json.fetch($url, 5000, $headers))
+
+  ## Only proceed if response is a list
+  #if($response && $response.size() > 0)
+    #foreach($ticket in $response)
+      #set($ticketMap = {})
+      $ticketMap.put("id", $ticket.id)
+      $ticketMap.put("subject", $ticket.subject)
+      $ticketMap.put("priority", $ticket.priority)
+      $ticketMap.put("status", $ticket.status)
+      $ticketMap.put("created_at", $ticket.created_at)
+      $ticketMap.put("updated_at", $ticket.updated_at)
+      $ticketMap.put("requester_id", $ticket.requester_id)
+      #set($void = $ticketList.add($ticketMap))
+    #end
+  #else
+    #break
+  #end
+#end
+
+$dotJSON.setHeader("Content-Type", "application/json")
+$dotJSON.put("ticketCount", $ticketList.size())
+$dotJSON.put("tickets", $ticketList)
+$dotJSON.toJson()

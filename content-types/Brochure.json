@@ -1,0 +1,130 @@
+{
+  "clazz" : "SimpleContentType",
+  "id" : "c6c0823ab8a160d522d44df41da56ff6",
+  "name" : "Brochure",
+  "variable" : "Brochure",
+  "modDate" : "2024-09-26T12:47:31.000+00:00",
+  "iDate" : "2024-09-12T18:37:42.000+00:00",
+  "host" : "48190c8c-42c4-46af-8d1a-0cd5db894797",
+  "folder" : "SYSTEM_FOLDER",
+  "siteName" : "demo.dotcms.io",
+  "folderPath" : "/",
+  "icon" : "event_note",
+  "baseType" : "CONTENT",
+  "fields" : [ {
+    "clazz" : "RowField",
+    "id" : "0422204e009651443157b12425aa4cec",
+    "modDate" : "2024-09-12T18:38:10.000+00:00",
+    "name" : "fields-0",
+    "fieldType" : "Row",
+    "fieldTypeLabel" : "Row",
+    "iDate" : "2024-09-12T18:38:10.000+00:00",
+    "variable" : "fields01",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "68d78b8deca399852d19b6481183f217",
+    "modDate" : "2024-09-12T18:38:10.000+00:00",
+    "name" : "fields-1",
+    "sortOrder" : 1,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2024-09-12T18:38:10.000+00:00",
+    "variable" : "fields11",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "TextField",
+    "searchable" : true,
+    "indexed" : true,
+    "listed" : true,
+    "id" : "e3291ed33cc3636c68f37343dd5956cd",
+    "modDate" : "2024-09-12T18:38:11.000+00:00",
+    "name" : "Title",
+    "variable" : "title",
+    "sortOrder" : 2,
+    "fieldType" : "Text",
+    "fieldTypeLabel" : "Text",
+    "iDate" : "2024-09-12T18:38:05.000+00:00",
+    "dataType" : "TEXT"
+  }, {
+    "clazz" : "DateTimeField",
+    "searchable" : true,
+    "indexed" : true,
+    "listed" : true,
+    "id" : "587e3cc3de0d5e86afa420d8595effc1",
+    "modDate" : "2024-09-26T12:47:29.000+00:00",
+    "name" : "Publish Date",
+    "variable" : "publishDate",
+    "required" : true,
+    "sortOrder" : 3,
+    "fieldType" : "Date-and-Time",
+    "fieldTypeLabel" : "Date and Time",
+    "iDate" : "2024-09-26T12:47:29.000+00:00",
+    "dataType" : "DATE"
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "7c4e03e1a8c7a768abbac4388355dc97",
+    "modDate" : "2024-09-26T12:47:30.000+00:00",
+    "name" : "fields-2",
+    "sortOrder" : 4,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2024-09-12T18:38:10.000+00:00",
+    "variable" : "fields2",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "BinaryField",
+    "id" : "929c6a03b2056a6b971ee2b172c5c287",
+    "modDate" : "2024-09-26T12:47:30.000+00:00",
+    "name" : "File",
+    "variable" : "file1",
+    "sortOrder" : 5,
+    "fieldType" : "Binary",
+    "fieldTypeLabel" : "Binary",
+    "iDate" : "2024-09-12T18:38:25.000+00:00",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "RowField",
+    "id" : "2c177a71f27215a35e1a49177603a696",
+    "modDate" : "2024-09-26T12:47:31.000+00:00",
+    "name" : "fields-3",
+    "sortOrder" : 6,
+    "fieldType" : "Row",
+    "fieldTypeLabel" : "Row",
+    "iDate" : "2024-09-12T18:37:42.000+00:00",
+    "variable" : "fields0",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "c3c3cc4f51e35a905f5cab65e75e17e2",
+    "modDate" : "2024-09-26T12:47:31.000+00:00",
+    "name" : "fields-4",
+    "sortOrder" : 7,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2024-09-12T18:37:42.000+00:00",
+    "variable" : "fields1",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "WysiwygField",
+    "searchable" : true,
+    "indexed" : true,
+    "id" : "1a2988e3fdc3079bd46bf357a889f67a",
+    "modDate" : "2024-09-26T12:47:31.000+00:00",
+    "name" : "Description",
+    "variable" : "description",
+    "sortOrder" : 8,
+    "fieldType" : "WYSIWYG",
+    "fieldTypeLabel" : "WYSIWYG",
+    "iDate" : "2024-09-12T18:38:37.000+00:00",
+    "dataType" : "LONG_TEXT"
+  } ],
+  "metadata" : {
+    "CONTENT_EDITOR2_ENABLED" : false
+  },
+  "workflows" : [ {
+    "id" : "d61a59e1-a49c-46f2-a929-db2b4bfa88b2",
+    "variableName" : "SystemWorkflow"
+  } ],
+  "dotCMSObjectType" : "ContentType"
+}

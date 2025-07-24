@@ -1,0 +1,139 @@
+{
+  "clazz" : "SimpleContentType",
+  "id" : "f24e4234545922c8d705e1186d413cc3",
+  "name" : "Online Courses",
+  "variable" : "OnlineCourses",
+  "modDate" : "2024-06-24T19:46:35.000+00:00",
+  "iDate" : "2024-06-24T19:45:47.000+00:00",
+  "host" : "48190c8c-42c4-46af-8d1a-0cd5db894797",
+  "folder" : "SYSTEM_FOLDER",
+  "siteName" : "demo.dotcms.io",
+  "folderPath" : "/",
+  "icon" : "event_note",
+  "baseType" : "CONTENT",
+  "fields" : [ {
+    "clazz" : "RowField",
+    "id" : "ad72c4efd60017570902738a46c1ba97",
+    "modDate" : "2024-06-24T19:45:53.000+00:00",
+    "name" : "fields-0",
+    "fieldType" : "Row",
+    "fieldTypeLabel" : "Row",
+    "iDate" : "2024-06-24T19:45:53.000+00:00",
+    "variable" : "fields0",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "3a134cedcbfc25827987e823ea18504b",
+    "modDate" : "2024-06-24T19:45:53.000+00:00",
+    "name" : "fields-1",
+    "sortOrder" : 1,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2024-06-24T19:45:53.000+00:00",
+    "variable" : "fields1",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "TextField",
+    "searchable" : true,
+    "indexed" : true,
+    "listed" : true,
+    "id" : "02e680c61d71e806d5447a920c83d8c0",
+    "modDate" : "2024-06-24T19:46:01.000+00:00",
+    "name" : "Title",
+    "variable" : "title",
+    "required" : true,
+    "sortOrder" : 2,
+    "fieldType" : "Text",
+    "fieldTypeLabel" : "Text",
+    "iDate" : "2024-06-24T19:46:01.000+00:00",
+    "dataType" : "TEXT"
+  }, {
+    "clazz" : "CategoryField",
+    "searchable" : true,
+    "indexed" : true,
+    "id" : "4000c7b6c07bd927151209ef8f43ffad",
+    "modDate" : "2024-06-24T19:46:34.000+00:00",
+    "name" : "Category",
+    "variable" : "category",
+    "sortOrder" : 3,
+    "values" : "9fa0ab8b-f4d6-4784-88ad-3ed7616bd220",
+    "fieldType" : "Category",
+    "fieldTypeLabel" : "Category",
+    "iDate" : "2024-06-24T19:46:34.000+00:00",
+    "dataType" : "SYSTEM",
+    "categories" : {
+      "categoryName" : "Categories",
+      "description" : null,
+      "inode" : "9fa0ab8b-f4d6-4784-88ad-3ed7616bd220",
+      "key" : "categories",
+      "keywords" : "",
+      "sortOrder" : 0
+    }
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "67eb069d908bd4743c48efb7c3981322",
+    "modDate" : "2024-06-24T19:46:35.000+00:00",
+    "name" : "fields-2",
+    "sortOrder" : 4,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2024-06-24T19:45:53.000+00:00",
+    "variable" : "fields2",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "BinaryField",
+    "searchable" : true,
+    "indexed" : true,
+    "id" : "341d1bcdc41fec3c2c161979f4175929",
+    "modDate" : "2024-06-24T19:46:35.000+00:00",
+    "name" : "Image",
+    "variable" : "image",
+    "required" : true,
+    "sortOrder" : 5,
+    "fieldType" : "Binary",
+    "fieldTypeLabel" : "Binary",
+    "iDate" : "2024-06-24T19:46:11.000+00:00",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "RowField",
+    "id" : "71447010398d5527c28cdf04f9cedf8d",
+    "modDate" : "2024-06-24T19:46:35.000+00:00",
+    "name" : "fields-3",
+    "sortOrder" : 6,
+    "fieldType" : "Row",
+    "fieldTypeLabel" : "Row",
+    "iDate" : "2024-06-24T19:45:47.000+00:00",
+    "variable" : "fields3",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "c7cb74c58067859c7875576206b2e207",
+    "modDate" : "2024-06-24T19:46:35.000+00:00",
+    "name" : "fields-4",
+    "sortOrder" : 7,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2024-06-24T19:45:47.000+00:00",
+    "variable" : "fields4",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "WysiwygField",
+    "id" : "d9f14b3ef7945fa8fd3a379a09840aec",
+    "modDate" : "2024-06-24T19:46:35.000+00:00",
+    "name" : "Description",
+    "variable" : "description",
+    "sortOrder" : 8,
+    "fieldType" : "WYSIWYG",
+    "fieldTypeLabel" : "WYSIWYG",
+    "iDate" : "2024-06-24T19:46:20.000+00:00",
+    "dataType" : "LONG_TEXT"
+  } ],
+  "metadata" : {
+    "CONTENT_EDITOR2_ENABLED" : false
+  },
+  "workflows" : [ {
+    "id" : "d61a59e1-a49c-46f2-a929-db2b4bfa88b2",
+    "variableName" : "SystemWorkflow"
+  } ],
+  "dotCMSObjectType" : "ContentType"
+}
