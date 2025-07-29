@@ -29,42 +29,28 @@ jobs:
 
 
   sync-with-dotcms:
-    needs: dotcli-runner
-    runs-on: ubuntu-24.04
-    env:
-      # Global environment expected by dotCMS CLI
-      # This is how we instruct the cli the target server
-      DOT_API_URL: ${{ vars.DOT_API_URL }}
-      # This is how we instruct the cli the target folder in the repo
-      # By default it must be the root of the repo this allows setting up a different folder on top of the root
-      DOT_REPO_BASE_PATH: ${{ vars.DOT_REPO_BASE_PATH }}
-      # This is how we instruct the cli to create the workspace if it does not exist
-      DOT_CREATE_WORKSPACE: ${{ vars.DOT_CREATE_WORKSPACE || 'true' }}
-      # This is the CLI version to use, but we can always override this value
-      DOT_CLI_JAR_DOWNLOAD_URL: ${{ vars.DOT_CLI_JAR_DOWNLOAD_URL || needs.dotcli-runner.outputs.url }}
-      # In case we want to force the download of the CLI jar
-      DOT_FORCE_DOWNLOAD: ${{ vars.DOT_FORCE_DOWNLOAD || 'false' }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  needs: dotcli-runner
+  runs-on: ubuntu-24.04
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
-      - name: Load .env file
-        uses: aarcangeli/load-dotenv@v1.0.0
-        with:
-          if-file-not-found: 'warn'
+    - name: Load .env file
+      uses: aarcangeli/load-dotenv@v1.0.0
 
-      - name: Print env vars
-        run: |
-          echo "$GITHUB_ENV"
-#test change
-      - name: Get changes
-  run: |
-    if git cat-file -e ${{ github.event.before }}^{commit}; then
-      git diff --name-only ${{ github.event.before }} ${{ github.event.after }} > changed_files.txt
-    else
-      echo "Previous commit not found. Using fallback diff from HEAD^."
-      git diff --name-only HEAD^ HEAD > changed_files.txt
-    fi
+    - name: Print env vars
+      run: echo "$GITHUB_ENV"
+
+    - name: Get changes
+      run: |
+        if git cat-file -e "${{ github.event.before }}^{commit}"; then
+          git diff --name-only "${{ github.event.before }}" "${{ github.event.after }}" > changed_files.txt
+        else
+          echo "Previous commit not found. Using fallback diff from HEAD^."
+          git diff --name-only HEAD^ HEAD > changed_files.txt
+        fi
 
       - name: List changed files
         run: |
