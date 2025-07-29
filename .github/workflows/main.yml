@@ -56,10 +56,15 @@ jobs:
       - name: Print env vars
         run: |
           echo "$GITHUB_ENV"
-
+#test change
       - name: Get changes
-        run: |
-          git diff --name-only ${{ github.event.before }} ${{ github.event.after }} > changed_files.txt
+  run: |
+    if git cat-file -e ${{ github.event.before }}^{commit}; then
+      git diff --name-only ${{ github.event.before }} ${{ github.event.after }} > changed_files.txt
+    else
+      echo "Previous commit not found. Using fallback diff from HEAD^."
+      git diff --name-only HEAD^ HEAD > changed_files.txt
+    fi
 
       - name: List changed files
         run: |
