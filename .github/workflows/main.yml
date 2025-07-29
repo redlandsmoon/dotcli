@@ -27,30 +27,35 @@ jobs:
           echo "url=$URL" >> "$GITHUB_OUTPUT"
           echo "::endgroup::"
 
-
   sync-with-dotcms:
-  needs: dotcli-runner
-  runs-on: ubuntu-24.04
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
+    needs: dotcli-runner
+    runs-on: ubuntu-24.04
+    env:
+      DOT_API_URL: ${{ vars.DOT_API_URL }}
+      DOT_REPO_BASE_PATH: ${{ vars.DOT_REPO_BASE_PATH }}
+      DOT_CREATE_WORKSPACE: ${{ vars.DOT_CREATE_WORKSPACE || 'true' }}
+      DOT_CLI_JAR_DOWNLOAD_URL: ${{ vars.DOT_CLI_JAR_DOWNLOAD_URL || needs.dotcli-runner.outputs.url }}
+      DOT_FORCE_DOWNLOAD: ${{ vars.DOT_FORCE_DOWNLOAD || 'false' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    - name: Load .env file
-      uses: aarcangeli/load-dotenv@v1.0.0
+      - name: Load .env file
+        uses: aarcangeli/load-dotenv@v1.0.0
 
-    - name: Print env vars
-      run: echo "$GITHUB_ENV"
+      - name: Print env vars
+        run: echo "$GITHUB_ENV"
 
-    - name: Get changes
-      run: |
-        if git cat-file -e "${{ github.event.before }}^{commit}"; then
-          git diff --name-only "${{ github.event.before }}" "${{ github.event.after }}" > changed_files.txt
-        else
-          echo "Previous commit not found. Using fallback diff from HEAD^."
-          git diff --name-only HEAD^ HEAD > changed_files.txt
-        fi
+      - name: Get changes
+        run: |
+          if git cat-file -e "${{ github.event.before }}^{commit}"; then
+            git diff --name-only "${{ github.event.before }}" "${{ github.event.after }}" > changed_files.txt
+          else
+            echo "Previous commit not found. Using fallback diff from HEAD^."
+            git diff --name-only HEAD^ HEAD > changed_files.txt
+          fi
 
       - name: List changed files
         run: |
@@ -85,8 +90,6 @@ jobs:
           fi
         shell: bash
 
-      # This step requires permission to push to the repo
-      # you need to grant read/write permission for workflows in the repo settings
       - name: Persist updated workspace
         run: |
           saveChanges="${{ steps.dot-workspace.outputs.workspace-updated }}"
